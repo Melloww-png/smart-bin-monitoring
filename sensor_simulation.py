@@ -1,4 +1,5 @@
-#Sensor simulatiion
+#0599YFRR Daniel Clementrich Houston CW2 assignment
+#Sensor simulatiion 
 
 import random
 
