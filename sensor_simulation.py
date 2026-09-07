@@ -1984,22 +1984,20 @@ setInterval(
 
 
 if __name__ == "__main__":
-
     print()
     print("==================================")
     print("SMART BIN DASHBOARD")
     print("Opening website automatically...")
     print("==================================")
 
-
     def open_browser():
         webbrowser.open_new("http://127.0.0.1:5000")
 
+    threading.Timer(1, open_browser).start()
 
-    threading.Timer(1,open_browser).start()
-
-
-    app.run(host="127.0.0.1",
-            port=5000,
-            debug=True,
-            use_reloader=False)
+    app.run(
+        host="0.0.0.0",
+        port=5000,
+        debug=True,
+        use_reloader=False
+    )
